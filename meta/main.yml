@@ -1,0 +1,17 @@
+---
+galaxy_info:
+  role_name: motd
+  author: Stas Stavnichuk
+  description: configure motd
+  license: MIT
+  min_ansible_version: 1.4
+  platforms:
+  - name: Debian
+    versions:
+    - buster
+    - stretch
+    - jessie
+  galaxy_tags:
+    - system
+    - motd
+    - debian
