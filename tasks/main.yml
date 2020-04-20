@@ -1,10 +1,4 @@
 ---
-# - name: check current motd
-#   command: diff -s /etc/motd /etc/update-motd.d/00-header
-#   register: diff_output
-#   changed_when: "diff_output.rc == 1"
-#   failed_when: False
-
 - name: create directory
   file:
     path: /etc/update-motd.d
