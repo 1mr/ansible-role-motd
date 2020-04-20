@@ -10,4 +10,4 @@ fi
 /bin/echo -e "    \e[01;34mOS: \e[32m$DISTRIB_DESCRIPTION\e[0m"
 /bin/echo -e "    \e[01;34mKernel: \e[32m$(uname -r)\e[0m"
 /bin/echo -e "    \e[01;34mHostname: \e[32m{{ inventory_hostname }}\e[0m"
-/bin/echo -e "    \e[01;34mEnvironment: \e[32m{{ ENV }}\e[0m\n"
+/bin/echo -e "    \e[01;34mEnvironment: \e[32m{{ ENV | default('testing') }}\e[0m\n"
